@@ -11,12 +11,12 @@ TODO
 	- **Send**: send files from home-laptop to seedbox.
 	- **Clean**: remove files which are not seeded in rtorrent.
 
-you can find more tools at [here](https://github.com/SaberSalv/saber/wiki/Tools).
+you can find more tools at [here](https://github.com/sabersalv/saber/wiki/Tools).
 
 Getting Started
 ----------------
 
-Create `~/.saberrc` configuration file with mode 600 from [template](https://github.com/SaberSalv/saber/blob/master/templates/_saberrc).
+Create `~/.saberrc` configuration file with mode 600 from [template](https://github.com/sabersalv/saber/blob/master/saber/templates/_saberrc)
 
 ### Upload
 
@@ -108,7 +108,7 @@ Use `saber help` to list all tasks. use `saber help upload` to find specific tas
 Install
 -------
 
-_Main article_: [Install Saber](https://github.com/SaberSalv/saber/wiki/Install)
+_Main article_: [Install Saber](https://github.com/sabersalv/saber/wiki/Install)
 
 	$ gem install saber
 

@@ -1,18 +1,16 @@
 saber-addtorrent, add a torrent file to rutorrent inside the site.
 ================================================================
 
-
-REPLACED by sendlink
+**DEPRECATED, REPLACED by [sendlink](https://github.com/sabersalv/saber/tree/master/sendlink)**
 
 
 |                |                                                    |
 |----------------|----------------------------------------------------|
-| Homepage:      | https://github.com/SaberSalv/saber-addtorrent        |
+| Homepage:      | https://github.com/sabersalv/saber-addtorrent        |
 | Author:	       | Saber                                              |
 | License:       | MIT-LICENSE                                        |
-| Issue Tracker: | https://github.com/SaberSalv/saber-addtorrent/issues |
 
-This is a part of the [Saber](https://github.com/SaberSalv/saber) project, but you can use this alone.
+This is a part of the [Saber](https://github.com/sabersalv/saber) project, but you can use this alone.
 
 > Support sites: What, PTP, BTN, SCC, BIB, AB, bB, TPB, Demonoid, D-Addicts
 
@@ -31,7 +29,7 @@ Getting started
 
 It adds two saber icons near the download link of the torrents, after click, it'll send the torrent file to rutorrent with label "saber" and "saber1".
 
-![Alt text](https://raw.github.com/SaberSalv/saber-addtorrent/master/snapshot.jpg "snapshot")
+![Alt text](https://raw.github.com/sabersalv/saber/master/addtorrent/snapshot.jpg "snapshot")
 
 Install
 -------
@@ -68,15 +66,10 @@ Pull requests are very welcome! Please try to follow these simple rules if appli
 * Please create a topic branch for every separate change you make.
 * Make sure your patches are well tested. 
 
-Contributors
-------------
-
-[https://github.com/SaberSalv/saber-addtorrent/contributors](https://github.com/SaberSalv/saber-addtorrent/contributors)
-
 Resources
 ---------
 
-* [saber](https://github.com/SaberSalv/saber): the ultimate tool for PT
+* [saber](https://github.com/sabersalv/saber): the ultimate tool for PT
 * [rutorrent](http://code.google.com/p/rutorrent): Yet another web front-end for rTorrent.
 
 Copyright

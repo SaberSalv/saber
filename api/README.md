@@ -1,7 +1,7 @@
 TODO
 ----
 
-It's a part of [saber](https://github.com/SaberSalv/saber) project.
+It's a part of [saber](https://github.com/sabersalv/saber) project.
 
 **Limits**
 
