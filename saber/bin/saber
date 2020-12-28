@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+require_relative "../lib/saber"
+
+begin
+  Saber::CLI.start
+rescue Interrupt => e
+  Saber.ui.say "\nQuitting..."
+  Saber.ui.debug e.backtrace.join("\n")
+  exit 1
+rescue SyntaxError
+  raise
+rescue Exception => e
+  Saber.ui.error "#{e.class.name}: #{e.message}"
+  Saber.ui.say e.backtrace.join("\n")
+  exit 1
+end

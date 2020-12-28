@@ -1,0 +1,25 @@
+upload_type: comic
+authors: REQUIRED
+artists: REQUIRED
+title: REQUIRED
+publisher: 
+pages: REQUIRED
+year: REQUIRED
+yearto:
+complete:
+# English German French Spanish Italian Latin Japanese Danish Swedish Norwegian 
+# Dutch Russian Polish Portuguese Greek Irish Gaelic Korean Chinese Arabic
+language: English
+oneshot: 
+scene:
+tags: REQUIRED
+image: REQUIRED
+description: |
+  REQUIRED
+
+bb:
+  isbn:
+
+bib:
+  anonymous:
+  notify: yes

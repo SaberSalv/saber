@@ -1,0 +1,29 @@
+#!/bin/bash
+
+S3="s3://downloads.saber.li/saber"
+VERSION=$(sed -rn 's/.*@version\s+([0-9.]+)/\1/p' lib/core.coffee)
+
+run() { echo $*; $*; }
+
+case $1 in
+	b | build )
+		run bundle exec rakep build
+	;;
+
+	w | watch )
+		run bundle exec watchr saber-addtorrent.watchr
+	;;
+
+	s | server )
+		run bpm preview --port 4020 &>/dev/null &
+	;;
+
+	r | release )
+		cd dist
+		for file in *.js; do
+			file_with_version=$(echo $file | sed -r "s/saber-addtorrent/saber-addtorrent-$VERSION/")
+			s3cmd put --acl-public $file $S3/$file
+			s3cmd cp $S3/$file $S3/$file_with_version
+		done
+	;;
+esac

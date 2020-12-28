@@ -1,0 +1,30 @@
+{
+  "name": "saber-addtorrent",
+  "bpm": "1.0.0",
+  "bpm:build": {
+    "bpm_libs.js": {
+      "files": [
+        "lib"
+      ]
+    },
+    "bpm_styles.css": {
+      "files": [
+        "css"
+      ]
+    },
+    "saber-addtorrent/bpm_tests.js": {
+      "files": [
+        "spec"
+      ]
+    }
+  },
+  "dependencies": {
+    "coffee-script": ">= 0",
+    "jquery": ">= 0",
+    "gm_config": ">= 0"
+  },
+  "dependencies:development": {
+    "jasmine": ">= 0",
+    "jasmine-jquery": ">= 0"
+  }
+}

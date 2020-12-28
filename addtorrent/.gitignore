@@ -1,0 +1,10 @@
+.bpm
+*.bpkg
+.rake_tasks
+/vendor
+/spec/fixtures/*
+/tmp
+/assets
+/.bundle
+/dist
+.DS_Store

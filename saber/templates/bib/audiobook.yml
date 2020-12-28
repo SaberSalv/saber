@@ -1,0 +1,15 @@
+type: audiobook
+authors: REQUIRED
+title: REQUIRED
+isbn: REQUIRED
+publishers:
+year: REQUIRED
+# English German French Spanish Italian Latin Japanese Danish Swedish Norwegian 
+# Dutch Russian Polish Portuguese Greek Irish Gaelic Korean Chinese Arabic
+language:  
+tags: REQUIRED
+image: REQUIRED
+description: |
+  REQUIRED
+anonymous:
+notify: yes

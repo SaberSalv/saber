@@ -1,0 +1,1 @@
+GM_addStyle = function(){};

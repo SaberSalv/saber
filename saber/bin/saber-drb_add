@@ -1,0 +1,6 @@
+#!/bin/bash
+
+saber drb_add $* &
+
+# event.download.finishied debug 
+#saber drb_add $* 2>&1 >/dev/pts/6 &

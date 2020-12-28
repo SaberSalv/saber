@@ -1,0 +1,21 @@
+source "https://rubygems.org"
+ruby "1.9.3"
+
+gem "sinatra"
+gem "pd"
+gem "tagen"
+gem "optimism"
+gem "google-api-client"
+gem "oj"
+gem "goodreads"
+gem "amazon-ecs"
+gem "imgur"
+gem "isbn"
+
+group :development do
+  gem "rspec"
+  gem "guard"
+  gem "guard-rspec"
+  gem "rb-inotify"
+  gem "foreman"
+end

@@ -1,0 +1,4 @@
+plugin.description: a rutorrent plugin to auto download files into home laptop.
+plugin.author: Saber
+plugin.version: 0.1
+plugin.help: https://github.com/SaberSalv/saber

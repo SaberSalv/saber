@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Confirm</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/semantic-ui-saber/semantic.min.css">
+  <link rel="stylesheet" href="add-dialog.css">
+</head>
+
+<body id="app">
+<div class="ui one column page grid">
+<section class="column">
+<div class="ui form">
+<div class="fields">
+  <div class="two wide field">
+    <label class="bold">Client</label>
+  </div>
+  <div class="fourteen wide field">
+    <div class="line">
+      <button class="ui orange basic button" rv-each-client="data.clients" rv-class-active="client.default" rv-on-click="selectClient">{{client.name}}</button>
+    </div>
+  </div>
+</div>
+
+<div class="fields">
+  <div class="two wide field">
+    <label class="bold">Directory</label>
+  </div>
+  <div class="forteen wide field">
+    <div class="line">
+      <button class="ui orange basic button" rv-each-directory="data.directories" rv-class-active="directory.default", rv-on-click="selectDirectory">{{directory.name}}</button>
+    </div>
+    <div class="line">
+      <input type="text" placeholder="path" rv-value="customDirectory">
+    </div>
+  </div>
+</div>
+
+<div class="right field">
+  <button class="ui orange button add" rv-on-click="add">Add</button>
+</div>
+</div>
+</section>
+</div>
+
+<script src="bower_components/lodash/lodash.min.js"></script>
+<script src="bower_components/klass/klass.min.js"></script>
+<script src="bower_components/rivets/dist/rivets.bundled.min.js"></script>
+<script src="lib.js"></script>
+<script src="chrome/ui.js"></script>
+<script src="client.js"></script>
+<script src="add-dialog.js"></script>
+</body>
+</html>

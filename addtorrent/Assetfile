@@ -1,0 +1,75 @@
+require "pd"
+require "rake-pipeline-web-filters"
+require "./filters"
+
+APP_NAME = "saber-addtorrent"
+
+output "dist"
+
+# lib/a.coffee -> tmp/lib/a.js
+input "lib" do
+  output "tmp/lib"
+
+  match "*.coffee" do
+    coffee_script :bare => true
+  end
+end
+
+# app.user.js
+input "tmp/lib" do
+  match "*.js" do
+    neuter "#{APP_NAME}.user.js", :bare => true
+  end
+end
+
+# app.meta.js
+input "tmp/lib" do
+  match "core.js" do
+    meta "#{APP_NAME}.meta.js"
+  end
+end
+
+=begin
+# app-spade.js
+input "tmp/lib" do
+  match "*.js" do
+    minispade :rewrite_requires => true, :string => true, :module_id_generator => proc { |input|
+      name = input.path.sub(/\.js$/, '')
+      name == "main" ? "#{APP_NAME}" : "./#{name}"
+    }
+    concat "#{APP_NAME}-spade.js"
+  end
+end
+=end
+
+=begin
+input "spec" do
+  output "tests"
+
+  match "*.coffee" do
+    coffee_script :bare => true
+
+    concat "#{APP_NAME}-tests.js"
+  end
+end
+=end
+
+# spec/a.coffee -> tmp/lib/a.js
+input "spec" do
+  output "tmp/spec"
+
+  match "*.coffee" do
+    coffee_script :bare => true
+  end
+end
+
+input "tmp/spec" do
+  output "tests"
+
+  match "*.js" do
+    neuter "#{APP_NAME}-tests.js", :bare => true
+  end
+end
+
+
+# vim: ft=ruby

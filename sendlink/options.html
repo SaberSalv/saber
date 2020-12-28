@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Saber Sendlink</title>
+  <link rel="stylesheet" href="bower_components/semantic-ui-saber/semantic.min.css">
+  <link rel="stylesheet" href="options.css">
+</head>
+
+<body id="app">
+<div class="ui one column page grid">
+  <section class="column">
+    <h3 class="ui dividing header">Download Managers</h3>
+    <div>
+      <button type="button" class="ui basic orange button" rv-on-click="addClient">Add</button>
+    </div>
+    <div class="ui horizontal list">
+      <form rv-each-client="data.clients" class="ui form item hover-to-show">
+        <div class="inline field required">
+          <label>Name</label>
+          <input type="text" rv-value="client.name" placeholder="Name">
+        </div>
+
+        <div class="inline field required">
+          <label>Type</label>
+          <select rv-value="client.type">
+            <option></option>
+            <option rv-each-type="clientTypes" rv-value="type">{{type}}</option>
+          </select>
+        </div>
+
+        <div class="inline field required">
+          <label>URL</label>
+          <input type="text" placeholder="URL" rv-on-input="testURL" rv-value="client.url">
+          <i rv-if="client.isOnline" class="green checkmark icon"></i>
+          <i rv-unless="client.isOnline" class="red remove icon"></i>
+        </div>
+
+        <div class="inline field">
+          <label>Username</label>
+          <input type="text" placeholder="Username" rv-value="client.username">
+        </div>
+
+        <div class="inline field">
+          <label>Password</label>
+          <input type="password" placeholder="Password" rv-value="client.password">
+        </div>
+
+        <div class="inline field">
+          <label></label>
+          <button type="button" class="ui green text button hover" rv-class-active="client.default" rv-on-click="selectDefaultClient">Default</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="column">
+    <h3 class="ui dividing header">Download Directories</h3>
+    <div>
+      <button class="ui basic orange button" rv-on-click="addDirectory">Add</button>
+    </div>
+    <div class="ui horizontal list">
+      <form rv-each-directory="data.directories" class="ui form item hover-to-show">
+        <div class="inline field required">
+          <label>Name</label>
+          <input type="text" rv-value="directory.name" placeholder="Name">
+        </div>
+
+        <div class="inline field required">
+          <label>Path</label>
+          <input type="text" rv-value="directory.path" placeholder="Path">
+        </div>
+
+        <div class="inline field">
+          <label></label>
+          <button type="button" class="ui green text button hover" rv-class-active="directory.default" rv-on-click="selectDefaultDirectory">Default</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="column">
+    <button class="ui orange button" rv-on-click="save">Save</button>
+  </footer>
+</div>
+
+  <script src="bower_components/lodash/lodash.min.js"></script>
+  <script src="bower_components/klass/klass.min.js"></script>
+  <script src="bower_components/rivets/dist/rivets.bundled.min.js"></script>
+  <script src="lib.js"></script>
+  <script src="chrome/ui.js"></script>
+  <script src="client.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

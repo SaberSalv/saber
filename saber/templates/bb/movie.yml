@@ -1,0 +1,26 @@
+type: Movies
+title: 
+# BluRay R5 WEB-DL HD-DVD DVDRip DVDSCR HDTV PDTV SDTV VHSRip
+# TeleSync CAM DVD9 DVD5 BluRay 3D BluRay RC HDRip VODRip 
+source: 
+# Video Codec
+# x264 XVid MPEG-2 WMV-HD DivX
+videoformat: 
+# Audio Codec
+# AC-3 MP3 DTS PCM Vorbis AAC
+audioformat:
+# MKV MP4 AVI TS WMV VOB
+container: 
+# 1080p 1080i 720p 720i 480p 480i SD
+resolution:
+remaster_title:
+year:
+tags:
+# Description. DO NOT put mediainfo or screenshots in here.
+desc:
+# Mediainfo
+release_info:
+screenshot1:
+screenshot2:
+image:
+scene:

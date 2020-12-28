@@ -1,0 +1,12 @@
+body {
+  /*width: 400px;*/
+  padding-top: 2em;
+}
+
+#app .ui.form .field .line {
+  margin-bottom: 1em;
+}
+
+#app .ui.form .right.field {
+  text-align: right;
+}

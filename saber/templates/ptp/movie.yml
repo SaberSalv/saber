@@ -1,0 +1,63 @@
+# Type
+# nil(Feature Film), Short Film, Miniseries, Stand-up Commedy, Concert
+type: 
+
+# Movie Title
+title: REQUIRED
+# Year
+year: REQUIRED
+
+# People. not support.
+#artists: [] 
+# IMDB ID
+#imdbs: [] 
+#roles: []
+
+# Cover Art Image
+image: REQUIRED
+
+# YouTube Trailer
+trailer: 
+
+# Not Main Movie
+# Check this only if it does NOT contain the main movie.
+# Examples: ONLY contains extras, Rifftrax, Workprints
+special:
+
+# Edition Information 	
+# Check this box if this torrent is a special edition.
+# Examples: "Director's Cut", "3D", "The Criterion Collection", "Rifftrax", "Dual Audio", "Remux". 
+remaster:
+
+# Scene: 
+# Check this only if this is a 'scene release'. If you ripped it yourself, it is not a scene release.
+# You can double check by searching the file name on orlydb.com. 
+scene:
+
+# CAM TC TS R5 DVD-Screener VHS DVD TV HDTV HD-DVD Blu-ray Other
+source: REQUIRED
+
+# nil(Auto-detect) XviD DivX H.264 x264 DVD5 DVD9 BD25 BD50 Other
+codec: 
+
+# nil(Auto-detect) AVI, MPG, MKV, MP4, VOB IFO, ISO, m2ts, Other
+container: 
+
+# nil(Auto-detect) NTSC PAL 480p 576p 720p 1080i 1080p Other
+resolution:
+
+# action adventure animation arthouse asian biography camp comedy crime cult documentaary drama experimental expoitation family fantasy film.noir hisotry horror martial.arts musical mystery performance philosophy politics romance sci.fi short silent sport thriller video.art war western
+tags: REQUIRED
+
+# Synopsis 	
+album_desc:
+
+# Release Description
+release_desc:
+
+# Subtitles 
+# No Subtitles, English, Spanish, French, Arabic, Brazilian Port., Bulgarian, Chinese, Croatian,
+# Czech, Danish, Dutch, Estonian, Finnish, German, Greek, Hebrew, Hindi, Hungarian, Icelandic,
+# Indonesian, Italian, Japanese, Korean, Latvian, Lithuanian, Norwegian, Polish, Portuguese, Romanian,
+# Russian, Serbian, Slovak, Slovenian, Swedish, Thai, Turkish, Ukrainian, Vietnamese,
+subtitles: []

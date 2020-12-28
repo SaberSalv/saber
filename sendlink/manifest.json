@@ -1,0 +1,104 @@
+{
+  "name": "Saber Sendlink",
+  "description": "Send any link directly from the website to your Download Manager",
+  "version": "2.0",
+  "minimum_chrome_version": "41",
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxWhokAhrwtFJWy97bG19u12PxfidL2YhXqKCjiHsSr0V3GhXih6PNbkttxDTNZzFg+QCQvN4s6UsNFeX0en44hOq2avhRK6tWtUUCE9oinT0wqjUgkNlmVj3qNofUFCOJQX6GImJtYq1uROUKKa8vZmX7sPGP/a7s8T4VDzpnlsJUiNb4bvRfvTJt4YMTfjNlRZLu6uS8YQtNl49lwU0iw5NbDSJNJzNWFcfwbzwVMlp0tXNrohAN/ZR3GjZ3Lyz8StujrisBNQgBzNryvXwaidJcNP6w709yemE7U1QcfWLc1EkgbsoNKMlWAxAwcXegRIfZaCt4Ye4TKla0D3fjwIDAQAB",
+
+  "permissions": [
+    "windows",
+    "contextMenus",
+    "notifications",
+    "storage",
+    "http://*/",
+    "https://*/"
+  ],
+
+  "background": {
+    "scripts": [
+      "bower_components/lodash/lodash.min.js",
+      "bower_components/klass/klass.min.js",
+      "client.js",
+      "chrome/ui.js",
+      "chrome/background.js"
+    ],
+    "presistent": false
+  },
+
+  "content_scripts": [{
+    "js": [
+      "bower_components/lodash/lodash.min.js",
+      "bower_components/klass/klass.min.js",
+      "bower_components/jquery/dist/jquery.min.js",
+      "page.js"
+    ],
+    "css": ["page.css"],
+    "matches": [
+      "*://what.cd/torrents.php*",
+      "*://what.cd/collages.php*",
+      "*://what.cd/artist.php*",
+
+      "*://broadcasthe.net/torrents.php*",
+      "*://broadcasthe.net/collages.php*",
+      "*://broadcasthe.net/series.php*",
+      "*://broadcasthe.net/snatchlist.php*",
+
+      "http://passthepopcorn.me/torrents.php*",
+      "http://passthepopcorn.me/collages.php*",
+      "http://passthepopcorn.me/bookmarks.php",
+      "https://tls.passthepopcorn.me/torrents.php*",
+      "https://tls.passthepopcorn.me/collages.php*",
+      "https://tls.passthepopcorn.me/bookmarks.php",
+
+      "*://bibliotik.org/torrents/*",
+      "*://bibliotik.org/collections/*",
+      "*://bibliotik.org/publishers/*/torrents/*",
+      "*://bibliotik.org/creators/*/torrents/*",
+      "*://bibliotik.org/tags/*/torrents",
+      "*://bibliotik.org/torrents?search*",
+
+      "*://stopthepress.es/torrents.php*",
+      "*://stopthepress.es/collages.php*",
+      "*://stopthepress.es/artist.php*",
+
+      "*://sceneaccess.eu/browse*",
+      "*://sceneaccess.eu/spam*",
+      "*://sceneaccess.eu/archive*",
+      "*://sceneaccess.eu/foreign*",
+      "*://sceneaccess.eu/xxx*",
+
+      "http://animebyt.es/torrents.php*",
+      "http://animebyt.es/torrents2.php*",
+      "http://animebyt.es/collage.php*",
+      "http://animebyt.es/series.php*",
+
+      "https://baconbits.org/torrents.php*",
+      "https://baconbits.org/top10.php",
+
+      "http://thepiratebay.se/browse/*",
+      "http://thepiratebay.se/torrent/*",
+
+      "http://www.demonoid.me/files/*",
+      "http://www.demonoid.me/top_torrents.php",
+
+      "http://*.d-addicts.com/forum/torrents.php*",
+      "http://*.d-addicts.com/forum/viewtopic*"
+    ]
+  }],
+
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+
+  "web_accessible_resources": [
+    "images/*.png"
+  ],
+
+  "manifest_version": 2
+}

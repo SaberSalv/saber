@@ -1,0 +1,12 @@
+type: Audiobooks
+# Artist - Title
+title: 
+year: 
+# MP3, FLAC, Ogg, AAC, DTS 5.1 Audio, 24bit FLAC
+format: 
+# 192, V2 (VBR), 256, V0 (VBR), 320, Lossless, Other
+bitrate: 
+tags: 
+image:
+album_desc: 
+release_desc:

@@ -1,0 +1,63 @@
+browser = [:firefox, {profile: "default"}]
+#api_url = "http://saberapi.heroku.com"
+#scgi_server = "http://localhost/RPC2"
+
+p:
+  dir = Pa("~/bt") # bt download directory. 
+
+make:
+  #dir = Pa(".")                      # move to directory.
+  #watch = Pa("~/bt/watch")           # copy to local watch directory.
+  #remote_watch = Pa("bt/watch")      # ssh copy to remote watch directory.
+
+find_uploads:
+  #dir = Pa("~/bt/watch")             # torrent download directory
+
+upload:
+  archive = proc {|upload_type| upload_type} # move torrent file into archive directory after upload complete.
+  #archive = "archive"
+
+fetch:
+  dir = Pa("~/downloads")   # aria2 download directory.
+  remote_dir = Pa("~/bt")   # remote bt download directory.
+
+clean:
+  dir = Pa("~/bt")          # local bt download directory.
+
+server:
+  user = "x"               # seedbox login name
+  host = "seedbox"         # set seedbox ip address in /etc/hosts
+
+# [saber-upload] [saber-make]
+username = "foo"           # global username for login into site.
+#mktorrent_options = ""    # global mktorrent options.
+
+bib:
+  #username = "bar"              # per-tracker username. use default username if not set.
+  #mktorrent_options = "-l 17"   # per-tracker mktorrent options.
+  announce_url = "x"
+
+chd:
+  passkey = "x"
+  update_interval = 15*60
+  diskspace_limit = 20.gigabytes
+  up_rate_limit = 40.kilobytes
+
+# [saber-fetch]
+server:
+  ftp = "ftp://seedbox/bt"
+  xmpp:
+    jid = "x1@gmail.com"
+    password = "y1"
+
+client:
+  xmpp:
+    jid = "x2@gmail.com"
+    password = "y2"
+
+trakt:
+  apikey = nil
+  username = nil
+  password = nil # sha1 password from http://caligatio.github.com/jsSHA/
+
+# vim: ft=ruby

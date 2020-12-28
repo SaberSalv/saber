@@ -1,0 +1,14 @@
+body {
+  min-width: 992px;
+  padding-top: 2em;
+}
+
+#app .ui.form .inline.field > label {
+  width: 5em;
+  text-align: right;
+}
+
+#app .ui.form .inline.field > select {
+  display: inline-block;
+  width: auto;
+}

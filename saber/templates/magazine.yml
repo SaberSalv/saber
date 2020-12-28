@@ -1,0 +1,41 @@
+upload_type: magazine
+stp.name: required
+stp.title: required
+bb.title: required
+what.title: required
+bib.title: required
+# Issue, Pack, Special Issue, Book
+type: REQUIRED
+# Original Release, US Edition, UK Edition, ..
+edition: US Edition
+# English German French Spanish Italian Latin Japanese Danish Swedish Norwegian 
+# Dutch Russian Polish Portuguese Greek Irish Gaelic Korean Chinese Arabic
+language: English
+scene:
+retail:
+# art artificial.intelligence autobiography biography business children computer.science
+# computing crafts crime culture design economics education entertainment fantasy fashion
+# fiction finance food gaming guns health history hobbies horror human.interface humor medicine
+# men music mystery nature news non.fiction paranormal parenting philosophy photography politics
+# pop.culture religion romance science science.fiction software.engineering sports technology teen
+# thriller travel vehicles women
+stp.tags: required
+bb.tags: required
+what.tags: required
+bib.tags: required
+image: REQUIRED
+description: |
+  REQUIRED
+release_description:
+
+stp:
+  # Web Scan Disc Unknown
+  source: Unknown
+
+bib:
+  year: required
+  pages: required
+  yearto: 
+  anonymous:
+  notify: yes
+  #complete: auto fill by type

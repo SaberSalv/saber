@@ -1,0 +1,9 @@
+upload_type: application
+scene:
+title: REQUIRED
+tags: REQUIRED
+image: REQUIRED
+description: |
+  REQUIRED
+anonymous:
+notify: yes

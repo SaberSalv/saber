@@ -1,0 +1,15 @@
+{
+  "predef": ["chrome", "_", "$", "pd", "console", "klass", "rivets", "UI", "ui", "Client", "rc", "alert"],
+  "node": false,
+  "browser": true,
+  "asi": true,
+  "eqeqeq": true,
+  "eqnull": true,
+  "boss": true,
+  "evil": true,
+  "newcap": true,
+  "noarg": true,
+  "undef": true,
+  "sub": true,
+  "esnext": true
+}

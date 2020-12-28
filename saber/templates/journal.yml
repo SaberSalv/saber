@@ -1,0 +1,19 @@
+upload_type: journal
+title: REQUIRED
+pages: REQUIRED
+# English German French Spanish Italian Latin Japanese Danish Swedish Norwegian 
+# Dutch Russian Polish Portuguese Greek Irish Gaelic Korean Chinese Arabic
+language:  
+stp.tags: required
+bib.tags: required
+image: REQUIRED
+description: |
+  REQUIRED
+scene:
+
+bib:
+  complete:
+  year: required
+  yearto:
+  anonymous:
+  notify: yes

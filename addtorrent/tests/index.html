@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Tagen tests</title>
+
+  <link rel="shortcut icon" type="image/png" href="/tests/jasmine_favicon.png">
+
+  <link rel="stylesheet" type="text/css" href="/tests/jasmine.css">
+  <script type="text/javascript" src="/tests/jquery.js"></script>
+  <script type="text/javascript" src="/tests/jasmine.js"></script>
+  <script type="text/javascript" src="/tests/jasmine-jquery.js"></script>
+  <script type="text/javascript" src="/tests/jasmine-html.js"></script>
+  <script type="text/javascript" src="/tests/minispade.js"></script>
+  <script type="text/javascript" src="/tests/pd.js"></script>
+  <script type="text/javascript" src="/tests/tagen.js"></script>
+  <script type="text/javascript" src="/tests/gm_config.js"></script>
+  <script type="text/javascript" src="/tests/greasemonkey.js"></script>
+
+  <script type="text/javascript" src="/dist/saber-addtorrent.user.js"></script>
+  <script type="text/javascript">
+    //minispade.require("saber-addtorrent");
+  </script>
+  <script type="text/javascript" src="/tests/saber-addtorrent-tests.js"></script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var jasmineEnv = jasmine.getEnv();
+      jasmineEnv.updateInterval = 1000;
+
+      var trivialReporter = new jasmine.TrivialReporter();
+
+      jasmineEnv.addReporter(trivialReporter);
+
+      jasmineEnv.specFilter = function(spec) {
+        return trivialReporter.specFilter(spec);
+      };
+
+      var currentWindowOnload = window.onload;
+
+      window.onload = function() {
+        if (currentWindowOnload) {
+          currentWindowOnload();
+        }
+        execJasmine();
+      };
+
+      function execJasmine() {
+        jasmineEnv.execute();
+      }
+
+    })();
+  </script>
+
+</head>
+
+<body>
+</body>
+</html>

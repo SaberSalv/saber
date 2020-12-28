@@ -1,0 +1,33 @@
+#stp.gropuid:
+upload_type: ebook
+title: REQUIRED
+title2:
+authors:
+isbn: REQUIRED
+publisher:
+pages: REQUIRED
+year: REQUIRED
+# English German French Spanish Italian Latin Japanese Danish Swedish Norwegian 
+# Dutch Russian Polish Portuguese Greek Irish Gaelic Korean Chinese Arabic
+language: English
+retail:
+tags:
+#stp.tags:
+#bb.tags:
+#what.tags:
+#bib.tags:
+image:
+release_description: ""
+description: |
+  REQUIRED
+
+stp:
+  source: Unknown
+  edition: 
+  edition_year:
+  edition_publisher:
+  edition_isbn:
+
+bib:
+  anonymous:
+  notify: yes

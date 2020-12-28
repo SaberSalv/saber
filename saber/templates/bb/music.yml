@@ -1,0 +1,21 @@
+type: Musics
+artist: 
+title: 
+remaster:
+year: 
+scene:
+# MP3, FLAC, Ogg, ACC, DTS 5.1 Audio, 24bit FLAC 
+format: 
+# 192, V2 (VBR), 256, V0 (VBR), 320, Lossless, Other
+bitrate: 
+# CD, DVD, Vinyl, Soundboard, DAT, Web
+media: 
+# acoustic alternative ambient blues classic.rock classical country dance dubstep electronic
+# experimental folk funk hardcore heavy.metal hip.hop indie indie.pop instrumental jazz metal
+# pop post.hardcore post.rock progressive.rock psychedelic punk reggae rock soul trance trip.hop
+tags: 
+image: 
+album_desc: 
+release_desc:
+
+
